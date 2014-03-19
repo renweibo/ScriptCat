@@ -2,11 +2,11 @@
 
 
 function usage(){
-	echo "  Dummy usage in ${Script_Cat_Path}/bin directory!"
+	echo "  ${Script_Cat_Name} bin_dummy (usage|main)"
 }
 
-function dummy(){
-	echo "  Dummy command in ${Script_Cat_Path}/bin directory!"
+function main(){
+	echo "  call ${Script_Cat_Name} bin_dummy main"
 	echo "  Arg1=$1"
 	echo "  Arg2=$2"
 }
@@ -15,8 +15,8 @@ function dummy(){
 COMMAND="$1"; shift
 
 case $COMMAND in
-dummy)
-    dummy $@ 
+main)
+    main $@ 
     ;;
 *)
 	usage

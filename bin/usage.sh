@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Usage: $0 [command]"
+echo "Usage: ${Script_Cat_Name} [command]"
 echo "Available command:"
-echo "    $0 dummy"
-echo "    $0 version"
-echo "    $0 scaffold"
+echo "    ${Script_Cat_Name} dummy"
+echo "    ${Script_Cat_Name} version"
+echo "    ${Script_Cat_Name} scaffold"
 
